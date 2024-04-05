@@ -1,0 +1,48 @@
+
+<h2 mat-dialog-title>Dialog with elements</h2>
+<form class="form-input" #productForm="ngForm">
+  <mat-dialog-content>
+    <mat-form-field>
+      <mat-label>ID</mat-label>
+      <input
+        matInput
+        name="id"
+        [(ngModel)]="productByIdData.data._id"
+        disabled=""
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Product Name</mat-label>
+      <input
+        matInput
+        name="productName"
+        [(ngModel)]="productByIdData.data.name"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Description</mat-label>
+      <input
+        matInput
+        name="description"
+        [(ngModel)]="productByIdData.data.description"
+        class="desc-input"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Image</mat-label>
+      <input matInput name="image" [(ngModel)]="productByIdData.data.image" />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Price</mat-label>
+      <input matInput name="price" [(ngModel)]="productByIdData.data.price" />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Stock</mat-label>
+      <input matInput name="stock" [(ngModel)]="productByIdData.data.stock" />
+    </mat-form-field>
+  </mat-dialog-content>
+</form>
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close>Close</button>
+  <button mat-button mat-dialog-close (click)="onConfirm()">Confirm</button>
+</mat-dialog-actions>

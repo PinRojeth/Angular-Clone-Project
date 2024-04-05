@@ -1,0 +1,26 @@
+<div class="container-detail">
+  <div class="detail-img">
+    <mat-card>
+      <img
+        mat-card-image
+        src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+        alt="Photo of a Shiba Inu"
+      />
+    </mat-card>
+  </div>
+  <div class="detail-info">
+    <div class="detail-header">
+      <h1 class="label-name">{{ product?.data?.name }}</h1>
+      <h2 style="color: green">{{ product?.data?.stock }} Stock</h2>
+    </div>
+    <h2 class="label-price">{{ product?.data?.price }}$</h2>
+    <p-rating
+      [readonly]="true"
+      iconCancelClass="hidden"
+      [(ngModel)]="product.data.rating"
+    >
+    </p-rating>
+    <h3>{{ formatDate }}</h3>
+    <p>{{ product?.data?.description }}</p>
+  </div>
+</div>

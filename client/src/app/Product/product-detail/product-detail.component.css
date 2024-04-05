@@ -1,0 +1,38 @@
+mat-card {
+  padding: 25px;
+  width: 600px;
+}
+
+.container-detail {
+  display: flex;
+  justify-content: space-evenly;
+}
+.detail-img {
+  margin-left: 100px;
+}
+.detail-info {
+  width: 500px;
+  margin-right: 100px;
+}
+
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.label-name {
+  font-size: 36px;
+  font-weight: bolder;
+}
+
+.label-price {
+  font-size: 28px;
+  font-weight: bold;
+  color: red;
+}
+
+.rating {
+  display: flex;
+}
+
+

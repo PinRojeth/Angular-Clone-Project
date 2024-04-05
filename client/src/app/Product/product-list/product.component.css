@@ -1,0 +1,13 @@
+.btn-mode {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-view {
+    color: #1877F2;
+}
+
+.mode-container {
+    width: 100px;
+    text-align: center;
+}
